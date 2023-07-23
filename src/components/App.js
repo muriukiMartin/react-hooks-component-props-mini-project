@@ -13,6 +13,9 @@ function App() {
     <div className="App">
       <Header blogName={blogName} />
       <About aboutText={aboutText} />
+      <h2>{blogData.name}</h2>
+      <img src={blogData.image}></img>
+      <h3>{blogData.about}</h3>
       <ArticleList posts={blogData.posts}/>
     </div>
   );
