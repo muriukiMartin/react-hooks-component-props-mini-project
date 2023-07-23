@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Header blogName={blogName} />
-      <About aboutText={aboutText} />
+      <About imageSource={blogData.image} aboutText={aboutText} />
       <h2>{blogData.name}</h2>
       <img src={blogData.image}></img>
       <h3>{blogData.about}</h3>
