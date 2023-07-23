@@ -8,12 +8,12 @@ console.log(blogData);
 
 function App() {
   const blogName = 'My First Blog';
-  const aboutText = 'Welcome to the blog. I hope you find the information helpful'
+  const aboutText = 'Welcome to the blog. I hope you find the information helpful';
   return (
     <div className="App">
       <Header blogName={blogName} />
       <About aboutText={aboutText} />
-      <ArticleList />
+      <ArticleList posts={blogData.posts}/>
     </div>
   );
 }
